@@ -36,10 +36,10 @@ public class Testbase {
 
 		String browsername = props.getProperty("browser");
 
-		if (browsername.equalsIgnoreCase("chrome")) {
+		if (browsername.equals("chrome")) {
 
-			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\Jakkam Sairam\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		/*System.setProperty("webdriver.chrome.driver",
+					"C:\\Users\\Admin\\Downloads\\chromedriver_win32.exe");*/
 
 			driver = new ChromeDriver();
 
@@ -48,7 +48,7 @@ public class Testbase {
 		else if (browsername.equalsIgnoreCase("Edge")) {
 
 			System.setProperty("Webdriver.edge.driver",
-					"C:\\Users\\Jakkam Sairam\\Downloads\\chromedriver-win64 (1)\\chromedriver-win64.exe");
+					"C:\\Users\\Admin\\Downloads\\chromedriver-win64 (1)\\chromedriver-win64.exe");
 
 			driver = new EdgeDriver();
 
