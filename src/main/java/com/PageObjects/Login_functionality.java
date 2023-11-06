@@ -15,15 +15,15 @@ public class Login_functionality extends Testbase {
 
 
 
-	@FindBy (xpath="//input[@placeholder='example@gmail.com']")
+	@FindBy (xpath="(//input[@class='form-control'])[1]")
 	WebElement username;
 	
 	
-	@FindBy (xpath="//input[@placeholder='******']")
+	@FindBy (xpath="//input[@type='password']")
 	WebElement password;
 	
 	
-	@FindBy (xpath="//button[text()='Login']") 
+	@FindBy (xpath="//button[@class='btn green_btn']") 
 	WebElement loginbutton;
 	
 	
