@@ -36,28 +36,28 @@ public class Testbase {
 
 		String browsername = props.getProperty("browser");
 
-		if (browsername.equals("chrome")) {
+		if (browsername.equals("Edge")) {
 
 		/*System.setProperty("webdriver.chrome.driver",
 					"C:\\Users\\Admin\\Downloads\\chromedriver_win32.exe");*/
-
-			driver = new ChromeDriver();
-
-		}
-
-		else if (browsername.equalsIgnoreCase("Edge")) {
-
-			System.setProperty("Webdriver.edge.driver",
-					"C:\\Users\\Admin\\Downloads\\chromedriver-win64 (1)\\chromedriver-win64.exe");
 
 			driver = new EdgeDriver();
 
 		}
 
-		driver.manage().window().maximize();
+		else if (browsername.equalsIgnoreCase("Chrome")) {
+
+			/*System.setProperty("Webdriver.edge.driver",
+					"C:\\Users\\Admin\\Downloads\\chromedriver-win64 (1)\\chromedriver-win64.exe");*/
+
+			driver = new ChromeDriver();
+
+		}
+
+		/*driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
 		driver.get(props.getProperty("url"));
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);*/
 
 	}
 

@@ -1,7 +1,41 @@
-browser=chrome
+browser=edge
 
 url=http://empirehome.myprojectsonline.co.in/
 
 
-//username=sureshbabuemp@gmail.com
-//password=ZPMHQHIA
+username=sureshbabuemp@gmail.com
+password=ZPMHQHIA
+browser=edge
+
+url=http://empirehome.myprojectsonline.co.in/
+
+
+username=sureshbabuemp@gmail.com
+password=ZPMHQHIA
+
+
+Typename=team lead
+Typecode=102
+Changedcode=115
+
+Movefrom=Warehouse
+Moveto=Showroom
+Modelno=MS-01
+Quantity=01
+Note=Dressingtable
+Notes=Dtable
+
+date=12112023
+name=diwali
+desc=sunday
+
+name=vishal
+mobile=9900990099
+email=vishal.marolix@gmail.com
+wtsappno=1234567890
+orgname=skr
+orgadd=hyderabad
+orgno=1123232333
+orgemail=skr@gmail.com
+gstno=1AGST2345
+changedname=vishal A
