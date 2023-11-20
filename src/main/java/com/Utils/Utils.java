@@ -31,9 +31,9 @@ public class Utils extends Testbase {
 		ac.moveToElement(element).click().perform();
 	}
 public Object[][] ReaddataFromExcel(String sheetname) throws Throwable {
-	File fi=new File("./src/main/java/com/testdata/Book_testng-task-1.xlsx");
+	File fi=new File("./src/main/java/com/testdata/Book11.xlsx");
 	FileInputStream stream=new FileInputStream(fi);
-	XSSFWorkbook wrkbk=new XSSFWorkbook(fi);
+	XSSFWorkbook wrkbk=new XSSFWorkbook(stream);
 	XSSFSheet sheet = wrkbk.getSheet(sheetname);
 	int rownum = sheet.getPhysicalNumberOfRows();
 	            int celnum = sheet.getRow(1).getLastCellNum();
@@ -49,10 +49,10 @@ public Object[][] ReaddataFromExcel(String sheetname) throws Throwable {
 	
 }
 	public static Object[][] ReadDataFromExcel(String sheetname) throws Throwable {
-		File file1 = new File("./src/main/java/com/testdata/Book_testng-task-1.xlsx");
+		File file1 = new File("./src/main/java/com/testdata/Book11.xlsx");
 
 		FileInputStream stream = new FileInputStream(file1);
-		XSSFWorkbook wrkbk = new XSSFWorkbook(stream);
+	//	XSSFWorkbook wrkbk = new XSSFWorkbook(stream);
 
 		XSSFWorkbook workbook = new XSSFWorkbook(stream);
 
@@ -129,3 +129,4 @@ public Object[][] ReaddataFromExcel(String sheetname) throws Throwable {
 		r.keyRelease(KeyEvent.VK_ENTER);
 	}
 }
+//	File fi=new File("./src/main/java/com/testdata/Book_testng-task-1.xlsx");

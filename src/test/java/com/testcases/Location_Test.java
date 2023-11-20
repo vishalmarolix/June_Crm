@@ -21,7 +21,7 @@ public class Location_Test extends Testbase {
 		Initialization();
 
 		lf = new Login_Functionality(driver);
-
+		
 		lf.Dologin();
 
 		lp = new Location_pageobjects(driver);

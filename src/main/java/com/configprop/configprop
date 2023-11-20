@@ -1,4 +1,4 @@
-browser=edge
+browser = edge
 
 url=http://empirehome.myprojectsonline.co.in/
 
@@ -30,7 +30,7 @@ name=diwali
 desc=sunday
 
 name=vishal
-mobile=9900990099
+mobile=986588229
 email=vishal.marolix@gmail.com
 wtsappno=1234567890
 orgname=skr

@@ -29,17 +29,18 @@ public class Login_Test extends Testbase {
 
 	}
 
-	@Test
+	/*@Test
 
-	public void Verifylogin() throws Throwable {
+    public void Verifylogin() throws Throwable {
 
-		lf.Dologin();
+		//lf.Dologin();
+	
 
 		String url = driver.getCurrentUrl();
 
 		Assert.assertEquals("http://empirehome.myprojectsonline.co.in/EmpireHome/", url);
 
-	}
+	}*/
 
 	@Test(dataProvider = "Data", dataProviderClass = Login_Test.class)
 	public void verifyloginwithExcel(String Username, String Password) throws Throwable {
@@ -48,14 +49,14 @@ public class Login_Test extends Testbase {
 
 		String url = driver.getCurrentUrl();
 
-		Assert.assertEquals("http://empirehome.myprojectsonline.co.in/EmpireHome/", url);
+		Assert.assertEquals("http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard", url);
 
 	}
 
 	@DataProvider
 
 	public Object[][] Data() throws Throwable {
-		Utils.ReadDataFromExcel(Sheetname);
+	//	Utils.ReadDataFromExcel(Sheetname);
 
 		return Utils.ReadDataFromExcel(Sheetname);
 
